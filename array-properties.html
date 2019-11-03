@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array properties demo</title>
+	<script type="text/javascript">
+		/*
+		var things = new Array("Phone","Table")     Output: 2
+		document.write(things.length);
+		*/
+		var things = new Array("Phone"," Table")
+		var color = new Array(" Red"," Blue<br>")
+		var both = things.concat(color);
+		var convert = things.join("-");
+		color.pop();
+		document.write(both);
+		document.write(convert);
+		document.write(color);		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

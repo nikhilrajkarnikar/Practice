@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listener Demo</title>
+</head>
+<body>
+<button id="myBtn">Click me!</button>
+<script type="text/javascript">
+document.getElementById("myBtn").addEventListener("click",test);
+document.getElementById("myBtn").addEventListener("click",test1);
+
+	function test(){
+		alert("Hi this works!");
+	}
+	function test1(){
+		alert("Hi this also works!");
+	}
+</script>
+</body>
+</html>

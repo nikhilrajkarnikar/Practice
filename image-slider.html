@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image slider</title>
+</head>
+<style type="text/css">
+	.slider{height: 700%; width: 80%; margin: 0 auto;}
+	.slider h2{background: black; color: red; text-align: center;}
+	.slider img{height: 600%; width: 100%;}
+</style>
+<body>
+	<div class="slider">
+		<h2>JavaScript Image Slider</h2>
+		<hr>
+			<img src="1.jpg" id="first-image"/>
+	</div>
+	<script>
+		var images = [
+		"1.jpg",
+		"2.jpg",
+		"3.jpg",
+		"4.jpg"
+		];
+		var i = 0;
+		function slide(){
+			document.getElementById("first-image").src = images[i];
+			if (i<(images.length-1))
+			i++;
+			else
+				i = 0;
+		}
+		setInterval(slide,1000) 
+	</script>
+</body>
+</html>
